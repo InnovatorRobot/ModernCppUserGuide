@@ -11,18 +11,22 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++2a")
 
 add_executable(Cpp20TheCompleteGuide
     main.cpp
-    Enum.h
-    MainArgs.h
-    Templates.h
-    Concepts.h
-    Classes.h
-    NameSpace.h
-    MetaProgramming.h
-    SmartPointers.h
-    Overloading.h
-    LogicalOperators.h
-    Polymorphism.hpp
-    ExceptionHandling.hpp
+    Cpp20/Enum.h
+    Cpp20/MainArgs.h
+    Cpp20/Templates.h
+    Cpp20/Concepts.h
+    Cpp20/Classes.h
+    Cpp20/NameSpace.h
+    Cpp20/MetaProgramming.h
+    Cpp20/SmartPointers.h
+    Cpp20/Overloading.h
+    Cpp20/LogicalOperators.h
+    Cpp20/Polymorphism.hpp
+    Cpp20/ExceptionHandling.hpp
+    Cpp20/ClassTemplate.hpp
+    Cpp20/MoveSemantic.hpp
+    Cpp20/BoxContainer.hpp
+    Cpp20/FunctionEntity.hpp
 
     extern/cereal.hpp
     extern/rapidjson.hpp
@@ -34,6 +38,22 @@ add_executable(Cpp20TheCompleteGuide
 
     stl/priority_queue.hpp
     stl/Trees.hpp
+
+    effective_cpp/deducing_types.hpp
+    effective_cpp/enable_if.hpp
+    effective_cpp/futures.hpp
+
+    TheModernCppChallenge/math_problem.hpp
+    TheModernCppChallenge/language_features.hpp
+    TheModernCppChallenge/StringAndRegularExperissions.hpp
+
+    apple_interview/algorithms.hpp
+    apple_interview/DataStructures.hpp
+
+    replicated_codes/smart_pointers_packagedTask_Async.h
+
+    multithreading/promise_future_packaged.hpp
+    multithreading/concurrency.hpp
 )
 
 find_package(fmt REQUIRED)
